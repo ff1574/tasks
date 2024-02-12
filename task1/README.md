@@ -6,6 +6,7 @@ This project is a web application that displays a map with a polygon overlay. It
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for Visual Studio Code
+- [Any Other IDE / extenstion with the same capabilities]
 
 ## Usage
 
@@ -16,7 +17,7 @@ This project is a web application that displays a map with a polygon overlay. It
 
 ## Compatibility
 
-This application has been tested and works on all major web browsers except Safari.
+This application has been tested on all major web browsers except Safari.
 
 ## Files
 
@@ -24,11 +25,3 @@ This application has been tested and works on all major web browsers except Safa
 - `css/main.css`: The main stylesheet for the application.
 - `scripts/app.js`: The JavaScript file that creates the map and adds the polygon.
 - `data/polygon.json`: The JSON file that contains the polygon data.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
