@@ -22,15 +22,39 @@ Before running this application, ensure you have the following installed:
 ```json
 {
   "productListings": [
-    {"productID": "123", "authorizedSellerID": "A1"},
-    {"productID": "456", "authorizedSellerID": "A2"},
-    {"productID": "789", "authorizedSellerID": "A3"}
+    { "productID": "123", "authorizedSellerID": "A1" },
+    { "productID": "456", "authorizedSellerID": "A2" },
+    { "productID": "789", "authorizedSellerID": "A3" }
   ],
   "salesTransactions": [
-    {"productID": "123", "sellerID": "B2"},
-    {"productID": "456", "sellerID": "A2"},
-    {"productID": "789", "sellerID": "C1"},
-    {"productID": "123", "sellerID": "A1"},
-    {"productID": "456", "sellerID": "B3"}
+    { "productID": "123", "sellerID": "B2" },
+    { "productID": "456", "sellerID": "A2" },
+    { "productID": "789", "sellerID": "C1" },
+    { "productID": "123", "sellerID": "A1" },
+    { "productID": "456", "sellerID": "B3" }
   ]
-}```
+}
+```
+
+## Sample Response
+
+For the following sample request, this would be the response
+
+```json
+{
+  "unauthorizedSales": [
+    {
+      "productID": "123",
+      "unauthorizedSellerID": ["B2"]
+    },
+    {
+      "productID": "789",
+      "unauthorizedSellerID": ["C1"]
+    },
+    {
+      "productID": "456",
+      "unauthorizedSellerID": ["B3"]
+    }
+  ]
+}
+```
