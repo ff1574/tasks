@@ -1,6 +1,6 @@
 # Maximum Non-Overlapping Job Interviews API
 
-This REST API endpoint is designed to calculate the maximum number of non-overlapping job interviews a person can attend. It processes POST requests containing two lists: start times and end times of job interviews. The API calculates the maximum number of interviews a person can attend without any overlap and returns the result.
+This REST API endpoint is designed to calculate the maximum number of non-overlapping job interviews a person can attend. It processes POST requests containing two lists: start times and end times of job interviews. The API calculates the maximum number of interviews a person can attend without any overlap and returns the result. Edge case where the interview that starts at the same time as the previous ends counts.
 
 ## Prerequisites
 
@@ -21,8 +21,8 @@ Before running this application, ensure you have the following installed:
 
 ```json
 {
-  "start_times": [10, 20, 30, 40, 50, 60],
-  "end_times": [15, 25, 35, 45, 55, 65]
+  "start_times": [10, 25, 30, 40, 50, 52],
+  "end_times": [25, 29, 45, 45, 55, 75]
 }
 ```
 
@@ -32,6 +32,6 @@ For the following sample request, this would be the response
 
 ```json
 {
-  "max_interviews": 3
+  "max_interviews": 4
 }
 ```
